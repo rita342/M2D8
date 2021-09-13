@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>bootstrap</title>
+    <style>
+        .navbar {
+            height: 40px;
+        }
+        
+        .navbar ul li {
+            display: inline-block;
+            margin-left: 40px;
+            color: white;
+        }
+        
+        .first-column {
+            height: 400px;
+            padding: 150px;
+            text-align: center;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border: 2px solid black;
+        }
+        
+        .second-column {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+        .first-row {
+            border-top-right-radius: 50px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            background-color: rgb(230, 230, 132);
+        }
+        
+        .second-row {
+            border-right: 2px solid black;
+            background-color: rgb(248, 248, 98);
+        }
+        
+        .third-row {
+            border-bottom-right-radius: 50px;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            background-color: rgb(245, 245, 19);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-dark bg-primary text-center mb-5">
+        <ul>
+            <li>Navbar</li>
+            <li>home</li>
+        </ul>
+    </nav>
+
+
+    <div class="container mt-5">
+
+
+        <section>
+            <h1 class="  text-muted text-center display-3">Exercise 1</h1>
+            <p class="lead text-center mt-5
+           mb-5">Recreate this table just using bs4 classes or styling without adding removing any dom element.</p>
+            <div class="row">
+                <div class="col-md-6 bg-success d-flex align-items-center justify-content-center text-light first-column">
+                    First Column Height 400px; Green-ish background Text centered
+                </div>
+                <div class="col-md-2 bg-primary d-flex  align-items-end text-light second-column">
+                    Second Column Text to the bottom Bold , bluish
+                </div>
+                <div class="col-md-4">
+                    <div class="row h-100">
+                        <div class="col-sm-12 d-flex align-items-center first-row">
+                            Third Column Part 1
+                        </div>
+                        <div class="col-sm-12 d-flex align-items-center  second-row">
+                            Third Column Part 2
+                        </div>
+                        <div class="col-sm-12 d-flex align-items-center  third-row ">
+                            Third Column Part 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section>
+
+            <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 2</h1>
+            <p class="lead text-center mt-5 mb-5">Create a pricing table to sell your product!</p>
+            <div class="row justify-content-lg-center">
+                <div class="card bg-light mb-3 m-2" style="max-width: 18rem;">
+                    <div class="card-header text-center">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-outline-primary w-100">Primary</button>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3 mb-3 m-2" style="max-width: 18rem;">
+                    <div class="card-header text-center">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title ">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary w-100" data-toggle="button" aria-pressed="false">
+                          Single toggle
+                        </button>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3 mb-3 ml-2" style="max-width: 18rem;">
+                    <div class="card-header text-center">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary w-100" data-toggle="button" aria-pressed="false">
+                          Single toggle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section>
+            <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 3</h1>
+            <p class="lead text-center mt-5 mb-5">And this could be the video part of your website!</p>
+            <div class="container justify-content-lg-center m-lg-5">
+                <div class="row ">
+
+                    <div class="card ml-2" style="width: 18rem;">
+                        <img src="http://placehold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  ml-2" style="width: 18rem;">
+                        <img src="http://placehold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2" style="width: 18rem;">
+                        <img src="http://placehold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-5">
+
+                    <div class="card  ml-2" style="width: 18rem;">
+                        <img src="http://placehold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2" style="width: 18rem;">
+                        <img src="http://placehold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2" style="width: 18rem;">
+                        <img src="http://placehold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5 ">
+
+                    <div class="card ml-2 " style="width: 18rem; ">
+                        <img src="http://placehold.it/300 " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Card title</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2 ">
+                                <button class="btn btn-outline-secondary ">View</button>
+                                <button class="btn btn-outline-secondary ">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2 " style="width: 18rem; ">
+                        <img src="http://placehold.it/300 " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Card title</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2 ">
+                                <button class="btn btn-outline-secondary ">View</button>
+                                <button class="btn btn-outline-secondary ">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2 " style="width: 18rem; ">
+                        <img src="http://placehold.it/300 " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Card title</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2 ">
+                                <button class="btn btn-outline-secondary ">View</button>
+                                <button class="btn btn-outline-secondary ">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+            <h1 class="display-4 text-muted text-center mb-5 mt-5 ">Exercise 4</h1>
+            <p class="lead text-center mt-5 mb-5 ">Structure this section as a blog.</p>
+            <div class="row ">
+                <div class="col-8">
+                    <div class="card ml-2">
+                        <img src="http://placehold.it/750x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="card mb-5 ">
+                            <div class="card-header ">
+                                <h5>Find in my blog</h5>
+                            </div>
+                            <div class="card-body ">
+                                <div class="input-group mb-3 ">
+                                    <input type="text " class="form-control ">
+                                    <button class="btn btn-secondary ">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row ">
+                        <div class="card border-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Header</div>
+                            <div class="card-body text-dark">
+                                <div class="row">
+                                    <h5 class="card-title">Dark card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card ml-2">
+                        <img src="http://placehold.it/750x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="card ml-2">
+                        <img src="http://placehold.it/750x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="btn-group btn-group-sm me-2">
+                                <button class="btn btn-outline-secondary">View</button>
+                                <button class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <footer>
+            <h1 class="display-4 text-muted text-right mb-5 mt-5">Exercise 3</h1>
+            <p class=" text-right mt-5 mb-5">And this could be the video part of your website!</p>
+            <hr>
+            <div class="row ">
+                <div class="col-sm-12 col-md-4 ">
+                    <h5> Features</h5>
+                    <div class="d-flex flex-column ">
+                        <a href="# " class="text-muted ">Cool stuff</a>
+                        <a href="# " class="text-muted ">Random feature</a>
+                        <a href="# " class="text-muted ">Team feature</a>
+                        <a href="# " class="text-muted ">Stuff for developers</a>
+                        <a href="# " class="text-muted ">Last feature</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <h5> Resources</h5>
+                    <div class="d-flex flex-column ">
+                        <a href="# " class="text-muted ">Cool stuff</a>
+                        <a href="# " class="text-muted ">Resource</a>
+                        <a href="# " class="text-muted ">Resource name</a>
+                        <a href="# " class="text-muted ">Another resource</a>
+                        <a href="# " class="text-muted ">Final resource</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <h5> About</h5>
+                    <div class="d-flex flex-column ">
+                        <a href="# " class="text-muted ">Team</a>
+                        <a href="# " class="text-muted ">Locations</a>
+                        <a href="# " class="text-muted ">Privacy</a>
+                        <a href="# " class="text-muted ">Terms</a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
